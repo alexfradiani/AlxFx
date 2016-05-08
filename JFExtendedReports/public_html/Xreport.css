@@ -1,0 +1,30 @@
+.label_left {
+    text-align:left;
+    float:left;
+    background-color:#E8F1F0;
+    border:1px solid #D6D6D6;
+    padding:5px;
+    width:150px;
+    font-weight:bold;
+}
+.label_right {
+    text-align:right;
+    float:left;
+    border:1px solid #D6D6D6;
+    border-left:none;
+    padding:5px;
+    min-width: 100px;
+}
+.trades_label_left {
+    text-align:left;
+    float:left;
+    background-color:#E8F1F0;
+    border:1px solid #D6D6D6;
+    padding:5px;
+    font-weight:bold;
+    width:200px;
+}
+
+.bad {
+    background-color:#FFF0F0;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Xreport.css" />
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="width:100%; ">
+            <h1 style="text-align:center;">Extended Report:</h1>
+            <div style="float:left;">
+                <div class="label_left">Initial Deposit:</div>
+                <div class="label_right" id="initialDeposit"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="label_left">Total Net Profit:</div>
+                <div class="label_right" id="totalNetProfit"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="label_left">Commissions:</div>
+                <div class="label_right" id="commissions"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="label_left">Final deposit:</div>
+                <div class="label_right" id="finalDeposit"></div>
+                <div style="clear:both;"></div>
+                
+                <div style="margin-top: 20px;"></div>
+                <div class="label_left">Gross Profit:</div>
+                <div class="label_right" id="grossProfit"></div>
+                <div style="clear:both;"></div>
+                <div class="label_left">Gross Loss</div>
+                <div class="label_right" id="grossLoss"></div>
+                <div style="clear:both;"></div>
+            </div>
+            
+            <div style="float:left; margin-left:20px;">
+                <div class="trades_label_left">Total Trades:</div>
+                <div class="label_right" id="totalTrades"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="trades_label_left">Profit Trades (% of total):</div>
+                <div class="label_right" id="profitTrades"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="trades_label_left bad">Loss Trades (% of total):</div>
+                <div class="label_right" id="lossTrades"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="trades_label_left">Largest Profit Trade:</div>
+                <div class="label_right" id="largestProfitTrade"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="trades_label_left bad">Largest Loss Trade:</div>
+                <div class="label_right" id="largestLossTrade"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="trades_label_left">Average Profit Trade:</div>
+                <div class="label_right" id="averageProfitTrade"></div>
+                <div style="clear:both;"></div>
+                
+                <div class="trades_label_left bad">Average Loss Trade:</div>
+                <div class="label_right" id="averageLossTrade"></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <br/><br/><br/><br/>
+        
+        <script type="text/javascript">
+            //sample script
+            var arr = new Array();
+            
+            obj = new Object();
+            obj.cdate = new Date("2015-10-19T00:00:00");
+            obj.num = 2;
+            arr[0] = obj;
+            
+            obj = new Object();
+            obj.cdate = new Date("2015-10-17T00:00:00");
+            obj.num = 1;
+            arr[1] = obj;
+            
+            alert("original order");
+            for(var i = 0; i < arr.length; i++)
+                alert(arr[i].num);
+            
+            arr.sort(function(a, b) {
+                return a.cdate - b.cdate;
+            });
+        
+            alert("new order");
+            for(var i = 0; i < arr.length; i++)
+                alert(arr[i].num);
+            
+        </script>
+        
+    </body>
+</html>
